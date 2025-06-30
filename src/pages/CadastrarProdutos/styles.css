@@ -1,0 +1,180 @@
+:root {
+  --primary-color: #000000;
+  --secondary-color: #ff9900;
+  --font-color: #ffffff;
+  --font-family: "Roboto", sans-serif;
+}
+
+.register-product-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+
+  font-family: var(--font-family);
+}
+.cardRegisterProduct {
+  flex-direction: column;
+  align-items: center;
+  background-color: #f3f2f2;
+  padding: 20px;
+  margin: 20px 0;
+  border: 2px solid rgb(228, 228, 228);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  width: 60%;
+  height: 88vh;
+  padding: 40px;
+  
+}
+.titleRegisterProducts {
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: var(--font-family);
+  font-style: italic;
+  margin-bottom: 80px;
+}
+.formRegisterProduct {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.form-groupRegisterProduct {
+  margin-bottom: 20px;
+}
+
+.form-groupRegisterProduct input,
+.form-groupRegisterProduct select,
+.form-groupRegisterProduct textarea {
+  width: 90vh;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 15px;
+  height: 50px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  box-shadow: 2px 2px 2px 2px rgb(88, 88, 88);
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+
+.form-groupRegisterProduct label {
+  display: block;
+  font-size: 16px;
+  color: #a26100;
+  margin-bottom: 5px;
+}
+
+.form-groupRegisterProduct textarea {
+  resize: vertical;
+  height: 80px;
+}
+.inputRegisterProduct {
+  background-color: #fff;
+  font-weight: 600;
+  box-shadow: 2px 2px 2px 2px rgb(88, 88, 88);
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+}
+
+.checkboxActived {
+  margin-right: 5px;
+}
+
+.checkboxActived {
+  width: 25px;
+  height: 25px;
+  margin-top: 5px;
+}
+
+
+.btn-submitRegisterProduct {
+  width: 50%;
+  height: 40px;
+  background-color: var(--secondary-color);
+  border-radius: 25px;
+  background-color: #333;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-top: 25px;
+  
+}
+
+.btn-submitRegisterProduct:hover {
+  background-color: var(--secondary-color);
+}
+.btn-submitRegisterProduct:focus {
+  background-color: #ff9900;
+}
+
+.btn-delete {
+  width: 50%;
+  height: 40px;
+  background-color: var(--secondary-color);
+  border-radius: 25px;
+  background-color: #333;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.btn-delete:hover {
+  background-color: #aa0505;
+}
+
+@media (max-width: 1200px) {
+  .form-groupRegisterProduct input,
+  .form-groupRegisterProduct select,
+  .form-groupRegisterProduct textarea {
+    width: 50vh;
+  }
+}
+@media (max-width: 950px) {
+  .form-groupRegisterProduct input,
+  .form-groupRegisterProduct select,
+  .form-groupRegisterProduct textarea {
+    width: 40vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .titleRegisterProducts {
+    font-size: 2.5rem;
+  }
+  .btn-submitRegisterProduct {
+    font-size: 1.4rem;
+  }
+  .form-groupRegisterProduct input {
+    width: 50vh;
+  }
+  .cardRegisterProduct{
+    width: 80%;
+  }
+
+  .form-groupRegisterProduct input,
+  .form-groupRegisterProduct select,
+  .form-groupRegisterProduct textarea {
+    width: 30vh;
+  }
+}
+@media (max-width: 550px) {
+  .form-groupRegisterProduct input,
+  .form-groupRegisterProduct select,
+  .form-groupRegisterProduct textarea {
+    width: 20vh;
+  }
+  .cardRegisterProduct{
+    width: 90%;
+    height: 95vh;
+  }
+}

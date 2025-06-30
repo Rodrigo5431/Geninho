@@ -1,0 +1,141 @@
+:root {
+  --primary-color: #000000;
+  --secondary-color: #ff9900;
+  --font-color: #ffffff;
+  --font-family: "Roboto", sans-serif;
+}
+
+.filters-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.date-picker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.seller-picker {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.client-picker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.seller-picker div,
+.client-picker div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  font-size: 1rem;
+  margin: 1rem;
+}
+.buttonSearchOrder {
+  background-color: var(--secondary-color);
+  color: black;
+  font-weight: 500;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.buttonSearchOrder:active {
+  background-color: #b76e00;
+}
+
+.date-picker div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  font-size: 1rem;
+  margin: 1rem;
+}
+
+.date-picker input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin: 0.5rem;
+  border-radius: 5px;
+}
+
+.filters-selects {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.filter-select {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin: 0.5rem;
+  border: 2px solid #000;
+}
+
+.informationOrder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-top: 55px;
+  margin-bottom: 70px;
+}
+.informationOrder p {
+  font-size: 24px;
+  font-weight: 600;
+}
+.orders-section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+  align-items: center;
+}
+
+.pedidos {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  border-top: 1px solid black;
+  height: 60vh;
+}
+@media (max-width: 1200px) {
+  .orders-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .date-picker {
+    flex-direction: column;
+  }
+  .filters-selects {
+    flex-direction: column;
+  }
+}

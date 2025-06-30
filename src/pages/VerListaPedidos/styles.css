@@ -1,0 +1,90 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffcc00;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .logo h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .logo p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .nav-buttons button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .visualiza-lista-pedidos-container {
+    padding: 20px;
+  }
+  
+  .filtro-pedidos {
+    margin-bottom: 20px;
+  }
+  
+  .filtro-pedidos input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .lista-pedidos {
+    margin-top: 20px;
+  }
+  
+  .pedido-item {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .pedido-item h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .pedido-item p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .pedido-item ul {
+    padding-left: 20px;
+  }
+  
+  .pedido-item li {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #333;
+  }
+  

@@ -1,0 +1,95 @@
+.produtosContainer {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 30px; 
+  justify-content: center; 
+  padding: 30px;
+}
+
+.produtoCategoria {
+  font-weight: bold;
+  font-size: 3rem;
+  align-self: flex-start;
+  margin-left: 50px;
+  margin-top: 2%;
+  font-family: "Roboto", sans-serif
+}
+
+.produtoCard {
+  display: flex;
+  background-color: #f9f9f9;
+  border: 3px solid #f5f2f2;
+  border-radius: 8px;
+  padding: 10px;
+  width: calc(35% - 20px);
+  box-sizing: border-box;
+  min-height: 90;
+}
+
+.produtoImagem {
+  width: 50%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.bebidaImagem {
+  width: 50%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.produtoConteudo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding-left: 14px; 
+
+  width: 65%; 
+}
+
+.produtoNome {
+  display: flex;
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif
+}
+
+.produtoDescricao {
+  font-size: 1.3rem;
+  color: #666;
+  font-family: "Roboto", sans-serif
+}
+
+.produtoPreco {
+  font-size: 1.2rem;
+  font-weight: bold;
+  justify-items: center;
+  font-family: "Roboto", sans-serif
+}
+
+.botaoAdicionar {
+  background-color: #4caf50;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 3px;
+  padding: 1px 5px;
+  cursor: pointer;
+  align-self: flex-end;
+  height: 30%;
+  width: 32%;
+}
+
+.titulo{
+  color:#4caf50
+}
+
+.text{
+    
+    padding: 10px;
+    color: #000000;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-size: 1.5rem;
+    font-family: "Roboto", sans-serif
+} 

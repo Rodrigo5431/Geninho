@@ -1,0 +1,25 @@
+.coupon-card {
+  display: flex;
+  flex-direction: column;
+  background-color: antiquewhite;
+  width: 25%;
+  padding: 2%;
+  margin: 2%;
+  border-radius: 10px;
+  text-align: center;
+}
+.cupom-button{
+  margin: 2%;
+  margin-top: 10%;
+  height: 4vh;
+  border-radius: 10px;
+}
+.cupom-button:hover{
+  cursor: pointer;
+  background-color: #FF9920;
+}
+@media (max-width: 768px) {
+  .coupon-card{
+    width: 70%;
+  }
+}

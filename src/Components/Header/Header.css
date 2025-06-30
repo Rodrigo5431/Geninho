@@ -1,0 +1,238 @@
+:root {
+  --primary-color: #000000;
+  --secondary-color: #ff9900;
+  --font-color: #ffffff;
+  --font-family: "Roboto", sans-serif;
+}
+
+* {
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  width: 100%;
+  text-decoration: none;
+}
+
+.titleHeader {
+  font-size: 30px;
+  color: var(--font-color);
+}
+
+.subtitleHeader {
+  font-size: 16px;
+  color: var(--secondary-color);
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.imageBurguer {
+  width: 15%;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  padding-left: 2%;
+}
+
+.header-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-button {
+  background-color: var(--primary-color);
+  border: none;
+  color: var(--secondary-color);
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-buttonHamburguer {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-buttonHamburguer:hover {
+  background-color: #0c0c0c;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.hamburguerIcon {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+  cursor: pointer;
+  padding-right: 4%;
+}
+
+.hamburguerIcon .line {
+  width: 25px;
+  height: 3px;
+  background-color: var(--font-color);
+}
+
+.headerNavigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+  border-bottom: 5px solid var(--secondary-color);
+}
+
+.navbarHambur {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  position: absolute;
+  height: 220px;
+  width: 100%;
+  z-index: 100;
+  margin-bottom: 30px;
+  border-bottom: 5px solid var(--secondary-color);
+}
+
+.navbar {
+  background-color: var(--primary-color);
+  width: 100%;
+  position: sticky;
+  margin-top: 15px;
+  padding: 0;
+}
+
+.cartIconn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.cartDiv {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.navbar a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.screensHamburguer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.screensHamburguer a,
+.screensHamburguer button {
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--secondary-color);
+  all: unset;
+}
+
+
+@media (min-width: 951px) {
+  .navbarHambur {
+    display: none;
+  }
+}
+
+@media (max-width: 1165px) {
+  .imageBurguer {
+    width: 85px;
+  }
+
+  .titleHeader {
+    font-size: 15px;
+  }
+
+  .header-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .header-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hamburguerIcon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 25px;
+    cursor: pointer;
+    padding-right: 5%;
+    position: absolute;
+    right: 10px;
+  }
+
+  .header-nav {
+    display: none;
+  }
+
+  .navbar a {
+    display: none;
+  }
+  .navbarHambur{
+    height: 270px;
+  }
+}
+@media (max-width: 780px) {
+  .navigationProducts a {
+    font-size: 1.0rem;
+  }
+}
+@media (max-width: 550px) {
+  .imageBurguer {
+    width: 70px;
+  }
+
+  .titleHeader {
+    font-size: 12px;
+  }
+
+  .navigationProducts a {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .navigationProducts a {
+    font-size: 0.8rem;
+  }
+}

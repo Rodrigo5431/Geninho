@@ -1,0 +1,25 @@
+.registerButtonButton{
+    width: 10%;
+    margin: 1.5%;
+    height: 7vh;
+    border-radius: 10px;
+    background-color: #FF9900;
+    font-weight: 600;
+    font-size: 16px;
+}
+.registerButtonButton:hover{
+    cursor: pointer;
+    background-color: #FF9920;
+}
+@media(max-width:768px){
+    .registerButtonButton{
+        width: 15%;
+        font-size: 14px;
+    }
+}
+@media(max-width:768px){
+    .registerButtonButton{
+        width: 22%;
+        font-size: 14px;
+    }
+}

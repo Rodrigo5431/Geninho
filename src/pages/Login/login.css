@@ -1,0 +1,383 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  list-style: none;
+}
+
+.slick-dots li button:before {
+  font-size: 6px;
+  color: #fff;
+  opacity: 0.75;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #f9a826;
+  opacity: 1;
+}
+
+.carouselImage {
+  width: 100%;
+  height: 550px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.containerLogin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.account {
+  display: flex;
+  justify-content: center;
+}
+
+.cardLogin {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  width: 800px;
+  height: 650px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border: 2px solid rgb(228, 228, 228);
+}
+
+.carouselOverlay {
+  position: absolute;
+  top: 25%;
+  left: -9%;
+  transform: translateX(99%);
+  width: 440px;
+  border-radius: 20px;
+  height: 550px;
+  z-index: 1;
+}
+
+.carouselImage {
+  width: 100%;
+  border-radius: 30px;
+  height: 550px;
+  object-fit: cover;
+}
+
+.formContainer {
+  flex: none;
+  width: 400px;
+  display: flex;
+  border-radius: 15px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 2;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 50px;
+  color: #333;
+  width: 100%;
+  align-self: center;
+  text-align: left;
+  animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.login-input-button {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+.login-input-button:focus {
+  border-color: #f9a826;
+  outline: none;
+  box-shadow: 0 0 5px rgba(249, 168, 38, 0.5);
+}
+
+.inputArea {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  gap: 30px;
+  align-items: stretch;
+  width: 100%;
+}
+
+.input-field {
+  position: relative;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.input-button {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #eeeeee;
+  border-radius: 20px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.input-button:focus {
+  border-color: #f9a826;
+  outline: none;
+  box-shadow: 0 0 5px rgba(249, 168, 38, 0.5);
+}
+
+.loginButton {
+  width: 100%;
+  background-color: #f9a826;
+  color: #fff;
+  padding: 13px;
+  margin-top: 30px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.loginButton:hover {
+  background-color: #e0911d;
+  transform: scale(1.04);
+}
+
+.account {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.register {
+  color: #f9a826;
+  text-decoration: none;
+  display: flex;
+  align-self: center;
+}
+
+.register:hover {
+  text-decoration: underline;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.password-container {
+  position: relative;
+  width: 100%;
+}
+
+.eye-button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #f9a826;
+  font-size: 1.2rem;
+}
+
+.eye-button:focus {
+  outline: none;
+}
+
+@media (max-width: 1440px) {
+  .carouselOverlay,
+  .carouselImage {
+    visibility: hidden;
+  }
+
+  .cardLogin {
+    width: 900px;
+    height: 700px;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  .formContainer {
+    width: 400px;
+    display: flex;
+    border-radius: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+
+  .inputArea {
+    width: 100%;
+    gap: 20px;
+  }
+
+  .input-button {
+    padding: 12px;
+    font-size: 1.1rem;
+  }
+
+  .loginButton {
+    font-size: 1.1rem;
+    padding: 15px;
+    width: 110%;
+  }
+
+  .account {
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+
+  .register {
+    font-size: 1rem;
+  }
+}
+
+.rememberPassword {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.remember-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.forgotPassword {
+  color: #f9a826;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.forgotPassword:hover {
+  text-decoration: underline;
+}
+
+.title {
+  margin-left: 100px;
+}
+
+@media (max-width: 768px) {
+  .containerLogin {
+    flex-direction: column;
+    padding: 10px;
+    height: auto;
+  }
+
+  .cardLogin {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .title {
+    margin-left: 380px;
+  }
+
+  .carouselOverlay {
+    position: static;
+    transform: none;
+    width: 100%;
+    height: 250px;
+    margin-bottom: 20px;
+    visibility: hidden;
+  }
+
+  .carouselImage {
+    height: 100%;
+    border-radius: 10px;
+    visibility: hidden;
+  }
+
+  .formContainer {
+    width: 100%;
+    align-items: center;
+    padding: 0 10px;
+  }
+
+  .inputArea {
+    width: 100%;
+    gap: 20px;
+  }
+
+  .input-button {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .loginButton {
+    padding: 10px;
+    font-size: 0.9rem;
+    width: 100%;
+  }
+
+  .account {
+    font-size: 0.8rem;
+    margin-top: 10px;
+  }
+
+  .register {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cardLogin {
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    background-color: #eeeeee;
+  }
+
+  .carouselOverlay {
+    visibility: hidden;
+  }
+
+  .input-button,
+  .loginButton {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+}

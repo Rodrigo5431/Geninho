@@ -1,0 +1,41 @@
+
+#container-botoes {
+  background-color: black;
+  display:flex; 
+  justify-content: end; 
+  align-items: center; 
+}
+  
+  .btnAce {
+    margin: 10px;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+      
+  }
+  
+  .btnAce#diminuir {
+    background-color: #ff9900;
+    color: rgb(250, 250, 250);
+  }
+
+  .btnAce#diminuir:hover {
+    background-color:#ff9900;
+    transform: scale(1.05);
+
+  }
+  
+  .btnAce#aumentar {
+    background-color: #ff9900;
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
+   }
+
+   .btnAce#aumentar:hover {
+    background-color:#ff9900;
+    transform: scale(1.05);
+
+  }
+   

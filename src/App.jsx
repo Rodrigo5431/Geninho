@@ -1,10 +1,11 @@
-import React from 'react';
-function App() {
+import AppRoutes from './Routes/AppRoutes'
 
+function App() {
   return (
     <>
+    <AppRoutes/>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

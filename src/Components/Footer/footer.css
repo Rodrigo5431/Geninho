@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: #111111;
+    color: #ccc;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 10px;
+    font-size: 0.6em;
+    min-width: 200px;
+}
+
+.footer-section.about {
+    text-align: center;
+}
+
+.footer-section.about img {
+    margin: 0 auto;
+    display: block;
+}
+
+.footer-section.about h1 {
+    color: #fff; 
+    margin-top: 5px;
+    font-size: 1.3em;
+}
+
+.footer-section.about p {
+    margin: 5px 0;
+    font-size: 0.8em;
+}
+
+.footer-section h4 {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+}
+
+.footer-logo {
+    width: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.app-links img {
+    width: 90px;
+    margin: 5px 0;
+}
+
+.footer-separator {
+    width: 90%;
+    max-width: 700px;
+    height: 0.7px;
+    background-color: #414141;
+    margin: -20px auto -20px auto;
+}
+
+.footer-bottom {
+    background-color: #111111;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+.imageBurguer {
+    mix-blend-mode: difference;
+    width: 100px;
+    padding-bottom: -20px;
+}
+
+.footer-bottom a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 9px;
+}
+
+.footer-bottom a:hover {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        padding: 15px 10px;
+    }
+
+    .footer-section h4 {
+        font-size: 1rem;
+    }
+
+    .footer-section ul li {
+        margin-bottom: 8px;
+    }
+
+    .app-links img {
+        width: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-container {
+        padding: 15px;
+    }
+
+    .footer-section {
+        font-size: 0.8em;
+        min-width: 100%;
+        padding: 10px 0;
+    }
+
+    .footer-section.about img {
+        width: 80px;
+    }
+
+    .footer-section ul li {
+        font-size: 0.9em;
+    }
+
+    .footer-bottom {
+        font-size: 0.8em;
+    }
+
+    .footer-bottom a {
+        font-size: 0.8em;
+        margin: 0 10px;
+    }
+
+    .imageBurguer {
+        width: 80px;
+    }
+}
