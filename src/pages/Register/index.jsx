@@ -1,19 +1,22 @@
-import { useState, useContext, useEffect } from "react";
-import Header from "../../Components/Header";
-import Footer from "../../Components/Footer/index.jsx";
-import { registerUser } from "../../Services/Api.js";
+import { useContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Footer from "../../Components/Footer/index.jsx";
 import GeneralModal from "../../Components/GeneralModal/index.jsx";
-import "./cadastro.css";
-import Background from "../../Components/Background/index.jsx";
+import Header from "../../Components/Header/index.jsx";
 import { AuthContext } from "../../Context/Auth.jsx";
+import { registerUser } from "../../Services/Api.js";
+import "./register.css";
 
 export default function Cadastro() {
+
   useEffect(() => {
     document.title = "Cadastro";
   }, []);
+
+          
   const [formData, setFormData] = useState({
     name: "",
+    cpf: "",
     email: "",
     phone: "",
     password: "",
@@ -23,8 +26,6 @@ export default function Cadastro() {
   const { role } = useContext(AuthContext);
   const [showModal, setShowModal] = useState(false);
   const [modalMessage, setModalMessage] = useState("");
-  // const [profile, setProfile] = useState("");
-
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -66,13 +67,14 @@ export default function Cadastro() {
   }, [modalMessage]);
 
   return (
-    <Background>
+    <>
       <Header />
-      <section className="signup-container">        
+      <section className="signup-container">
         <form className="form-container" onSubmit={handleSubmit}>
-        <h2 tabIndex={0} className="titleRegister">
-          Cadastro
-        </h2>
+          <h2 tabIndex={0} className="titleRegister">
+            Cadastro
+          </h2>
+          
           <section className="formInput">
             <label tabIndex={0} className="titleInput" htmlFor="name">
               Nome
@@ -90,18 +92,18 @@ export default function Cadastro() {
             />
           </section>
           <section className="formInput">
-            <label tabIndex={0} className="titleInput" htmlFor="email">
-              Email
+            <label tabIndex={0} className="titleInput" htmlFor="cpf">
+              Cpf
             </label>
             <input
               tabIndex={0}
               className="inputRegister"
-              type="email"
-              id="email"
-              name="email"
-              value={formData.email}
+              type="cpf"
+              id="cpf"
+              name="cpf"
+              value={formData.cpf}
               onChange={handleChange}
-              placeholder="Email"
+              placeholder="Cpf"
               required
             />
           </section>
@@ -174,6 +176,22 @@ export default function Cadastro() {
             </div>
           )}
           <section className="formInput">
+            <label tabIndex={0} className="titleInput" htmlFor="email">
+              Email
+            </label>
+            <input
+              tabIndex={0}
+              className="inputRegister"
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              placeholder="Email"
+              required
+            />
+          </section>
+          <section className="formInput">
             <label tabIndex={0} className="titleInput" htmlFor="password">
               Senha
             </label>
@@ -209,7 +227,6 @@ export default function Cadastro() {
               required
             />
           </section>
-
           <button className="registerButton" type="submit">
             Cadastrar
           </button>
@@ -223,6 +240,6 @@ export default function Cadastro() {
         />
       )}
       <Footer />
-    </Background>
+    </>
   );
 }

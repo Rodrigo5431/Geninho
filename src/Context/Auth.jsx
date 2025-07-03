@@ -2,7 +2,6 @@ import PropTypes from "prop-types";
 import { createContext, useEffect, useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import {
-  createSession,
   getUserData,
   registerUser,
   setToken,
@@ -16,11 +15,6 @@ export default function AuthProvider({ children }) {
   const [loading, setLoading] = useState(true);
   const [authenticated, setAuthenticated] = useState(false);
 
-  const login = async (form) => {
-    const response = await createSession(form);
-    handleState(response);
-    return response;
-  };
 
   const handleState = async (response) => {
     const { authorization } = response.headers;
@@ -80,7 +74,6 @@ export default function AuthProvider({ children }) {
       authenticated,
       role,
       loading,
-      login,
       createUser,
       logout,
     }),

@@ -1,7 +1,6 @@
 import axios from "axios";
 
 const API = "http://localhost:8080";
-// const API = "http://35.223.203.22:8001";
 
 export const api = axios.create({
   baseURL: API,
@@ -22,9 +21,21 @@ export const setToken = (token) => {
   }
 };
 
-export const createSession = async (form) => {
-  const response = await api.post("/login", form);
-  return response;
+export const login = async (form) => {
+   try {
+    const response = await api.post(`/login`, {
+        form
+    });
+    if (response.status === 200) {
+        const token = response.headers["authorization"];
+        localStorage.setItem("token", token);
+    }
+    return response;
+
+  } catch (error) {
+    console.error(error);
+  }
+
 };
 
 export const getUserData = async () => {
@@ -33,8 +44,14 @@ export const getUserData = async () => {
 };
 
 export const registerUser = async (form) => {
+
+try {
   const response = await api.post("/users", form);
   return response;
+  
+} catch (error) {
+  console.log(error);
+}
 };
 
 export const getProducts = async () => {

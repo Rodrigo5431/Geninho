@@ -20,22 +20,7 @@ export default function CartProducts() {
   const { authenticated } = useContext(AuthContext);
   const navigate = useNavigate();
 
-  // useEffect(() => {
-  //   const agora = new Date();
-  //   const horarioAtual = `${String(agora.getHours()).padStart(2, "0")}:${String(
-  //     agora.getMinutes()
-  //   ).padStart(2, "0")}`;
 
-  //   if (
-  //     !lojaAberta ||
-  //     (horarioAbertura &&
-  //       horarioFechamento &&
-  //       (horarioAtual < horarioAbertura || horarioAtual > horarioFechamento))
-  //   ) {
-  //     alert("Loja fechada. Não é possível realizar pedidos.");
-  //     return null;
-  //   }
-  // }, [lojaAberta, horarioAbertura, horarioFechamento]);
 
   const renderCartProducts = () => {
     return products.map((product) => {

@@ -7,11 +7,11 @@ import ProductsSection from "../../Components/ProductsSection/ProductsSection.js
 export default function Home() {
 
   return (
-    <div>
+    <>
       <Header />
        <NavBar />
       <ProductsSection />
       <Footer />
-      </div>
+      </>
   );
 }
